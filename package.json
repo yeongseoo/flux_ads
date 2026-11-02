@@ -1,0 +1,31 @@
+{
+  "name": "flux-ads",
+  "version": "1.0.0",
+  "private": true,
+  "description": "FLUX ADS 공식 웹사이트 및 베타 파트너 모집",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "admin:hash": "node scripts/hash-password.mjs",
+    "secret": "node -e \"console.log(require('crypto').randomBytes(48).toString('base64url'))\""
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "dependencies": {
+    "lucide-react": "^1.66.0",
+    "next": "^15.5.28",
+    "pretendard": "^1.3.9",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "server-only": "^0.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "typescript": "^5.9.3"
+  }
+}
